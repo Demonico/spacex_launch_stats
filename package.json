@@ -7,12 +7,15 @@
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "start": "node dist/server.js",
-    "server": "nodemon dist/server.js"
+    "server": "nodemon dist/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Jarrod Van Doren",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
