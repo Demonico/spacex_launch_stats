@@ -9,16 +9,11 @@
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": [
-      "esnext.asynciterable",
-      "esnext"
-    ],
+    "lib": ["esnext.asynciterable", "esnext", "dom"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
